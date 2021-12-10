@@ -2,7 +2,7 @@ name: Code style check
 
 on:
   pull_request:
-    branches: [main, dev]
+    branches: [master, dev]
 
 jobs:
   lint:
@@ -23,7 +23,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: npm install
-        run: npm i
+        run: yarn install
 
       - name: Run the project's linter
-        run: npm run lint
+        run: yarn lint
