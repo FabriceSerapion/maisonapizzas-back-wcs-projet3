@@ -11,6 +11,7 @@
   "extends": ["airbnb-base", "plugin:prettier/recommended"],
   "rules": {
     "no-console": "off",
-    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }]
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "import/no-unresolved": [2, { "caseSensitive": false }]
   }
 }
